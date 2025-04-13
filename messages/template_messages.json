@@ -1,0 +1,25 @@
+{
+  "messages": [],
+  "lastUpdateTimestamp": "",
+  "_template_instructions": {
+    "usage": [
+      "Copy this file to create agent_1_messages.json, agent_2_messages.json, and agent_3_messages.json",
+      "Update lastUpdateTimestamp when adding messages",
+      "Follow the message structure in the example below"
+    ],
+    "message_example": {
+      "messageId": "a1m1",
+      "timestamp": "YYYY-MM-DDTHH:mm:ssZ",
+      "fromAgent": "agent-1",
+      "threadId": "project-thread-id",
+      "inReplyTo": null,
+      "content": "Message content here",
+      "type": "proposal|response|advisory",
+      "relatedTasks": ["task-id"],
+      "technicalFocus": {
+        "primary": "main-focus",
+        "secondary": ["additional-focus"]
+      }
+    }
+  }
+} 
