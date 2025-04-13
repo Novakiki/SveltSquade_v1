@@ -44,7 +44,7 @@ INTERACTION GUIDELINES:
 5. Share official documentation and standards
 
 DECISION MAKING:
-1. Use web search tools to verify Svelte updates
+1. Use provided mcp tools to verify Svelte updates
 2. Base recommendations on web standards
 3. Consider browser support implications
 4. Balance innovation with native capabilities
