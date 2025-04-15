@@ -1,55 +1,58 @@
-# SveltSquade v1
+# Svelte 5 Todo App with Cursor Composers
 
-A collaborative Todo application built with Svelte 5 utilizing the new runes system and native web APIs.
+This project demonstrates using Cursor's multi-agent composer feature to build a Todo application using Svelte 5.
 
-## Project Overview
+## Purpose
 
-This project is a Todo application that demonstrates modern web development practices with Svelte 5. It leverages:
+The primary goal is to showcase how multiple AI agents, defined using Cursor Rules, can collaborate on a software development task. Each agent has a specific role and interacts through shared documentation and coordination files.
 
-- Svelte 5 runes for state management
-- TypeScript for type safety
-- LocalStorage for data persistence
-- No external state management libraries
+## Agents
 
-## Project Structure
+This project utilizes three distinct agents defined in the `.cursor/rules/` directory:
 
+1.  **`agent-1` (Frontend Developer):**
+    *   Specializes in pure Svelte 5 UI and native web capabilities.
+    *   Responsible for building UI components (`/src/components/`) based on specifications.
+    *   Focuses on accessibility and responsive design.
+    *   Documents UI plans in `ui_components.mdc`.
+
+2.  **`agent-2` (Full Stack Developer):**
+    *   Specializes in pure Svelte 5 state management using runes and TypeScript.
+    *   Handles data structures, persistence (localStorage), and store APIs (`/src/stores/`).
+    *   Documents API specifications in `api_spec.mdc`.
+
+3.  **`agent-3` (Technical Advisor):**
+    *   Focuses on Svelte 5 best practices, web standards, and overall project coordination.
+    *   Provides technical guidance and performs code reviews.
+    *   Oversees coordination via `coordination.mdc`.
+
+## Coordination
+
+Agents coordinate their work primarily through:
+
+*   `coordination.mdc`: A central file for tracking project status, tasks, blockers, and inter-agent communication.
+*   Agent-specific scratchpads (`agent_1.txt`, `agent_2.txt`, `agent_3.txt`): For individual planning and notes.
+*   Artifact files (`api_spec.mdc`, `ui_components.mdc`): For sharing specific design documents.
+
+## Technology Stack
+
+*   Svelte 5 (with Runes)
+*   TypeScript
+*   Vite (Assumed, standard for SvelteKit)
+*   Native Web APIs (localStorage)
+
+## Cursor Rules
+
+The core of the multi-agent setup lies in the `.cursor/rules/` directory. These files define the roles, responsibilities, workflow, and interaction points for each agent, enabling Cursor to orchestrate their collaboration.
+
+## Running the Project (Example)
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
-/src/
-  /components/  - UI components (TodoApp, TodoList, TodoItem, etc.)
-  /stores/      - State management with Svelte 5 runes
-  /lib/         - Shared utilities and helpers
-  /types/       - TypeScript interfaces and type definitions
-  App.svelte    - Main application component
-  main.js       - Application entry point
-```
 
-## Features
-
-- Create, read, update, and delete todos
-- Filter todos by status (all/active/completed)
-- Persistence using browser localStorage
-- Responsive design and accessibility features
-
-## Development Status
-
-The project is currently in the initial setup phase. The coordination between different aspects of development is managed through documentation files:
-
-- `coordination.mdc` - Project coordination and team communication
-- `api_spec.mdc` - API specifications for state management
-- `ui_components.mdc` - UI component design and documentation
-
-## Development Team
-
-The project is developed by three specialized agents:
-- Agent-1: Frontend Developer (Svelte 5 UI and native web capabilities)
-- Agent-2: Full Stack Developer (Svelte 5 and state management)
-- Agent-3: Technical Advisor (Svelte 5 best practices and web standards)
-
-## Getting Started
-
-To use this project with Cursor AI:
-
-1. Open the project in Cursor
-2. Type "agent-3.mdc GO!" in the Cursor Composer (must use agent mode)
-3. The Technical Advisor agent will be activated to help guide development
-4. Use "@agent-1" or "agent-2" to activate other specialized agents as needed 
+*(Note: Add specific setup and run instructions based on your project initialization)*
