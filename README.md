@@ -47,12 +47,6 @@ The core of the multi-agent setup lies in the `.cursor/rules/` directory. These 
 
 ## Running the Project (Example)
 
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-```
+In Cursor Composer: @agent-3.mds GO!
 
 *(Note: Add specific setup and run instructions based on your project initialization)*
