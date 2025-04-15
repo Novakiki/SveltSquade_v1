@@ -1,0 +1,15 @@
+# API Specification (Store Interface)
+
+*To be defined by Agent-2*
+
+## Overview
+This document will contain the complete API specification for the Todo application stores.
+
+## Data Types
+
+## Store APIs
+### todoStore
+### filterStore
+### statsStore
+
+## Usage Examples

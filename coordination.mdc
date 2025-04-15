@@ -1,0 +1,53 @@
+---
+description: Central coordination hub for the Svelte Todo App project.
+globs: ["*"] # Agents need to read/write this regardless of file type focus
+alwaysApply: true # Ensure this context is always available for coordination checks
+---
+
+# Project Coordination: Svelte Todo App
+
+## Overall Goal
+Build a functional Todo application using Svelte 5, runes, native web APIs (localStorage), and adhering to best practices.
+
+## Current Phase
+**(To be updated by agents)**
+Example: `Planning` -> `API Design` -> `API Implementation` -> `UI Design` -> `UI Implementation` -> `Integration` -> `Testing`
+
+**Current Phase:** `Initial Setup`
+
+## Agent Status & Assignments
+
+*   **Agent-1 (Frontend):**
+    *   **Status:** `Waiting`
+    *   **Current Task:** `Awaiting API spec from Agent-2 and technical guidelines confirmation from Agent-3.`
+    *   **Blocked By:** `Agent-2 (API Spec)`, `Agent-3 (Guidance)`
+*   **Agent-2 (Backend/State):**
+    *   **Status:** `Waiting`
+    *   **Current Task:** `Awaiting technical guidelines confirmation from Agent-3 before designing API.`
+    *   **Blocked By:** `Agent-3 (Guidance)`
+*   **Agent-3 (Advisor):**
+    *   **Status:** `Active`
+    *   **Current Task:** `Reviewing initial setup, defining project structure, providing initial technical guidelines.`
+    *   **Blocked By:** `None`
+
+## Key Dependencies & Handoffs
+*   Agent-3 provides initial guidelines -> Agent-2 designs API -> Agent-1 designs UI components.
+*   Agent-2 implements store & API (`stores/`, `api_spec.mdc`) -> Agent-1 implements UI (`components/`, `ui_components.mdc`) using the API.
+*   Agent-3 reviews implementations.
+
+## Communication Log & Decisions
+*(Agents log key updates, questions needing broad visibility, or decisions made here)*
+
+*   **[2025-04-14 12:00] Agent-3:** Initial project structure defined in `agent-3.mdc`. Ready to provide Svelte 5 best practices guidance. @agent-2 @agent-1 Please confirm you've reviewed the structure.
+
+## Next Steps / Action Items
+*   Agent-3: Finalize initial technical guidelines in `agent-3.mdc`. Update status here.
+*   Agent-2: Once guidelines are confirmed, design API spec in `api_spec.mdc`. Update status here.
+*   Agent-1: Once API spec is available, plan UI components in `ui_components.mdc`. Update status here.
+
+---
+**Instructions for Agents:**
+1.  **ALWAYS Read First:** Check `Current Phase`, `Agent Status`, `Dependencies`, and `Communication Log` before starting work.
+2.  **Update Your Status:** Reflect accurately what you are working on, if you are blocked, or if you have completed a task.
+3.  **Log Key Updates:** Add significant updates, completed handoffs, or blocking questions to the `Communication Log`.
+4.  **Update Last:** Ensure this file reflects the project state accurately before you finish your turn.
