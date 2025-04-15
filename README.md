@@ -1,4 +1,4 @@
-# SvelteSquad: Svelte 5 Todo App
+# SveltSquade v1
 
 A collaborative Todo application built with Svelte 5 utilizing the new runes system and native web APIs.
 
